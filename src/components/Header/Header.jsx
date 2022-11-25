@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from '../NavBar/NavBar'
-import SearchFrom from '../SearchFrom/SearchFrom'
+import SearchFrom from '../SearchForm/SearchForm'
 import "./Header.css"
 
 const Header = () => {
