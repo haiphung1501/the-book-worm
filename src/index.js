@@ -24,7 +24,6 @@ root.render(
           <Route path = "book" element = {<BookList/>}/>
           <Route path = "/book/:id" element = {<BookDetails/>}/>
         </Route>
-        
       </Routes>
     </BrowserRouter>
   </AppProvider>
