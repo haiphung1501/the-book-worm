@@ -5,7 +5,7 @@ const AppContext = React.createContext();
 
 const AppProvider = ({children}) => {
     const [searchTerm, setSearchTerm] = useState("The Lord Of The Rings");
-    const [book,setBook] = useState([]);
+    const [books,setBook] = useState([]);
     const [loading, setLoading] = useState(true);
     const [resultTittle, setResultTitle] = useState("");
 
@@ -54,7 +54,7 @@ const AppProvider = ({children}) => {
     
     return (
         <AppContext.Provider value = {{
-            loading, book, setSearchTerm, resultTittle, setResultTitle,
+            loading, books, setSearchTerm, resultTittle, setResultTitle,
         }}>
             {children}
         </AppContext.Provider>
